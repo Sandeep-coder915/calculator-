@@ -18,20 +18,26 @@
         <ul>
 
             <li>
-                Calculator
+                <a href="#01">> Calculator</a>
             </li>
             <li>
-                Age Calculator
+                <a href="#02">>Age Calculator</a>
             </li>
 
             <li>
-                Velocity
+                <a href="#03">> velocity</a>
+            </li>
+            <li>
+               <a href="#04"> Bmi Calculator</a> 
+            </li>
+            <li>
+              <a href="#05"> Loan Calculator</a>
             </li>
         </ul>
     </div>
 
     <div class="fl">
-        <div class="container">
+        <div class="container" id="01">
             <div class="calculator">
                 <h1 style="    display: block;
     font-size: 2em;
@@ -81,7 +87,7 @@
         </div>
 
 
-        <div class="container1">
+        <div class="container1 " id="02">
             <h1>Age Calculator</h1>
             <label for="birthdate">Enter your birthdate:</label>
             <input type="date" id="birthdate">
@@ -91,7 +97,7 @@
             <p id="result"></p>
         </div>
 
-        <div class="container2">
+        <div class="container2" id="03">
             <h1>Velocity Calculator</h1>
             <label for="distance">Enter the distance (in meters):</label>
             <input type="number" id="distance" placeholder="Distance in meters">
@@ -100,7 +106,7 @@
             <button onclick="calculateVelocity()">Calculate Velocity</button>
             <p id="result2"></p>
         </div>
-        <div class="container3">
+        <div class="container3" id="04">
             <h1>BMI Calculator</h1><br>
            
             <label for="height">Enter the Height:</label><input type="text" id="height" placeholder="Height in cm">
@@ -137,7 +143,7 @@
         </div>
 
 
-          <div class="container4">  
+          <div class="container4" id="05">  
             <h1>Loan Interest Calculator</h1>
             <label for="principal">Principal Amount ($):</label>
             <input type="number" id="principal" placeholder="Enter principal amount">
