@@ -22,7 +22,7 @@ body {
 .calculator {
     margin: auto;
     display: flex;
-    height: 400px;
+    height: 500px;
     width: 400px;
     justify-content: center;
     align-items: center;
@@ -81,8 +81,11 @@ button {
 }
 
 .name {
-    text-align: center;
-    font-weight: 600;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 24px;
+     font-weight: 900;
 }
 
 
@@ -93,7 +96,7 @@ button {
  
     margin: auto;
     display: flex;
-    height: 400px;
+    height: 500px;
     width: 400px;
     justify-content: center;
     align-items: center;
@@ -206,7 +209,7 @@ height: 50px;padding: auto;
 .container2 {
     margin: auto;
     display: flex;
-    height: 400px;
+    height: 500px;
     width: 400px;
     justify-content: center;
     align-items: center;
@@ -257,4 +260,64 @@ input[type="number"] {
 p#result2 {
     font-size: 1.5em;
     margin-top: 20px;
+}
+
+
+
+.container3 {
+    margin: auto;
+    display: flex;
+    height: 500px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    overflow: hidden;
+  
+}
+
+
+input[type="text"] {
+    /* padding: 5px;
+    margin: 10px 0; */
+    padding: 30px 20px;
+    margin: 10px 0;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    color: rgb(161, 144, 144);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    /* font-size: 40px; */
+    font-weight: 500;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    
+    cursor: pointer;
+}
+ 
+
+p#result3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.container3 button {
+    
+      
+ 
+    padding: 12px 20px 20px 20px;
+    margin: 10px 0;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    font-weight: 900;
+
 }
