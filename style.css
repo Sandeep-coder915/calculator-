@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    /* height: 100%;
+    width: 100%; */
+
+    justify-content: center;
+
+    align-items: center;
+    background: linear-gradient(45deg, #fc466b, #3f5efb);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#h1 {
+    
+    text-align: center;
+    font-weight: 500;
+    color: #5f2525;
+}
+
+.calculator {
+    margin: auto;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    overflow: hidden;
+
+}
+
+input {
+
+    background: transparent;
+    color: rgb(161, 144, 144);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    cursor: pointer;
+
+
+
+
+}
+
+input::placeholder {
+    color: rgb(27, 26, 27);
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 70px;
+    color: #ffff;
+    border-radius: 40px;
+    background: transparent;
+    border: none;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+
+}
+
+.equal {
+    background-color: orange;
+}
+
+.name {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+
+.container1 {
+ 
+    margin: auto;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    overflow: hidden;
+
+}
+
+.container1 button {
+    padding: 12px 20px 20px 20px;
+    margin: 10px 0;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p#result {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+
+
+input[type="date"] {
+    padding: 30px 20px;
+    margin: 10px 0;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    color: rgb(161, 144, 144);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    
+   
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    
+    cursor: pointer;
+
+/ }
+.fl {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    row-gap: 30px; /* Adjust the gap between cards as needed */
+}
+
+@media (max-width: 768px) {
+    .fl {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1140px) {
+    .fl {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .fl {
+        grid-template-columns: 1fr;
+    }
+}
+
+ 
+.btt{
+    font-size: 14px;
+    font-weight: 900;
+    
+}
+.nav{
+height: 50px;padding: auto;
+}
+
+.nav ul{
+   
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     list-style: none;
+     text-decoration: none;
+     color: #fc466b;
+     cursor: pointer;
+     font-size: large;
+     font-weight: 700;
+     gap: 40px;
+}
+
+
+
+
+
+
+
+
+
+.container2 {
+    margin: auto;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    overflow: hidden;
+
+  
+}
+
+input[type="number"] {
+    /* padding: 5px;
+    margin: 10px 0; */
+    padding: 30px 20px;
+    margin: 10px 0;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    color: rgb(161, 144, 144);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    
+    cursor: pointer;
+}
+
+.container2 button {
+    
+      
+ 
+    padding: 12px 20px 20px 20px;
+    margin: 10px 0;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+
+}
+
+p#result2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
