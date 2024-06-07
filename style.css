@@ -267,8 +267,8 @@ p#result2 {
 .container3 {
     margin: auto;
     display: flex;
-    height: 500px;
-    width: 400px;
+    /* height: 500px;
+    width: 400px; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -320,4 +320,82 @@ p#result3 {
     width: 150px;
     font-weight: 900;
 
+}
+
+
+
+
+
+.container4 {
+    margin: auto;
+    display: flex;
+    /* height: 650px;
+    width: 600px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    overflow: hidden;
+}
+
+.container4 input[type="number"] {
+ 
+    /* padding: 5px;
+    margin: 10px 0; */
+    padding: 30px 20px;
+    margin: 10px 0;
+    box-shadow: 0px 3px 15px rgba(0, 115, 119, 5);
+    color: rgb(161, 144, 144);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    
+    cursor: pointer;
+}
+
+.container4 button {
+ 
+    padding: 12px 20px 20px 20px;
+    margin: 10px 0;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    font-weight: 900;
+}
+
+.container4 button:hover {
+    background-color: #45a049;
+}
+
+p#result6 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }

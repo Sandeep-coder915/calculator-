@@ -106,15 +106,59 @@
             <label for="height">Enter the Height:</label><input type="text" id="height" placeholder="Height in cm">
             <label for="height">Enter the Weight:</label><input type="text" id="weight" placeholder="weight in Kg">
             <p id="result3"></p><button id="btn" onclick="bmi()">Calculate</button>
-          </div>
-
-
-
-        <div class="name" style="text-align: center;">
-            <p>Made by Sandeep ❤️</p>
+            <table id="bmiTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>BMI</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-column="bmi">less than 18.5</td>
+                        <td data-column="category">Underweight</td>
+                    </tr>
+                    <tr>
+                        <td data-column="bmi">between 18.5 and 24.9</td>
+                        <td data-column="category">Ideal</td>
+                    </tr>
+                    <tr>
+                        <td data-column="bmi">between 25 and 29.9</td>
+                        <td data-column="category">Overweight</td>
+                    </tr>
+                    <tr>
+                        <td data-column="bmi">over 30</td>
+                        <td data-column="category">Obesity</td>
+                    </tr>
+                </tbody>
+            </table>  
+        
+        
         </div>
-    </div>
 
+
+          <div class="container4">  
+            <h1>Loan Interest Calculator</h1>
+            <label for="principal">Principal Amount ($):</label>
+            <input type="number" id="principal" placeholder="Enter principal amount">
+            
+            <label for="rate">Annual Interest Rate (%):</label>
+            <input type="number" id="rate" placeholder="Enter annual interest rate">
+            
+            <label for="years">Number of Years:</label>
+            <input type="number" id="years" placeholder="Enter number of years">
+            
+            <button onclick="calculateLoan()">Calculate</button>
+            <p id="result6"></p>
+            </div>
+            
+
+            <div class="name" style="text-align: center;">
+                <p>Made by Sandeep ❤️</p>
+            </div>
+        
+     
+ 
 
     <script src="./svript.js"></script>
 </body>

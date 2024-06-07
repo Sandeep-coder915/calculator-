@@ -68,15 +68,40 @@ function calculateVelocity() {
 }
 
 
-function bmi(){
-    
-
+ 
 document.getElementById("btn").addEventListener("click", function() {
-	var height_val = document.getElementById('height').value;
-	var weight_val = document.getElementById('weight').value;
-	var bmi = weight_val / (height_val / 100 * height_val / 100);
-	var bmio = (bmi.toFixed(2));
+    var height_val = document.getElementById('height').value;
+    var weight_val = document.getElementById('weight').value;
 
-	document.getElementById("result3").innerHTML = "Your BMI is " + bmio;
+    if (height_val === '' || weight_val === '') {
+        document.getElementById("result3").innerHTML = 'Please enter valid numbers for height and weight.';
+        return;
+    }
+
+    var bmi = weight_val / (height_val / 100 * height_val / 100);
+    var bmio = bmi.toFixed(2);
+
+    document.getElementById("result3").innerHTML = "Your BMI is " + bmio;
+    document.getElementById("bmiTable").style.display = 'block';
 });
+
+
+function calculateLoan() {
+    const principal = parseFloat(document.getElementById('principal').value);
+    const rate = parseFloat(document.getElementById('rate').value);
+    const years = parseFloat(document.getElementById('years').value);
+
+    if (isNaN(principal) || isNaN(rate) || isNaN(years)) {
+        document.getElementById('result6').textContent = 'Please enter valid numbers for all fields.';
+        return;
+    }
+
+    const monthlyRate = rate / 100 / 12;
+    const totalMonths = years * 12;
+    const emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) / (Math.pow(1 + monthlyRate, totalMonths) - 1);
+
+    const totalInterest = (emi * totalMonths) - principal;
+    const totalAmount = principal + totalInterest;
+
+    document.getElementById('result6').textContent = `Total Interest: ₹${totalInterest.toFixed(2)}\nTotal Amount to be Paid: ₹${totalAmount.toFixed(2)}\nMonthly EMI: ₹${emi.toFixed(2)}`;
 }
